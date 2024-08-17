@@ -17,6 +17,16 @@
 		url('./fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
+@font-face {
+	font-family: 'Gilroy-SemiBold';
+	src: url('./fonts/gilroy-semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-semibold.svg#gilroy-semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,39 +44,56 @@ img {
     max-width: 100%;
 }
 
-h1,
-h2,
-p, 
-a, button {
+h1, 
+a {
     color: black;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
 .mainHeader {
     margin-top: 40px;
     margin-bottom: 84px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-.mainHeader h2 {
-    font-size: 24px;
-    line-height: 115%;
-    text-align: left;
+ .mainHeader img {
+    max-width: 137;
 }
+
+.mainHeader nav {
+    /* max-width: 533; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
 .mainHeader a {
     font-family: Gilroy-Medium;
     font-size: 14px;
-    line-height: 115%;
+    line-height: 120%;
     text-align: left;
 
 }
 
-.mainContent_LeftSide {
+.home {
+    font-family: Gilroy-SemiBold;
+    color: #F25822;
+}
+
+.main{
     margin-bottom: 162px;
+    display: flex;
+    justify-content: space-between;
+    gap: 39px;
+}
+
+.mainContent_LeftSide {
+    max-width: 522px;
 }
 
 .mainContent_LeftSide h1 {
@@ -85,18 +112,27 @@ a, button {
     line-height: 115%;
     text-align: left;
     margin-bottom: 37px;
+    max-width: 466px;
+}
+
+.mainContent_leftSide-binList {
+    max-width: 302px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mainContent_leftSide-binList button {
-    padding: 15px 30px;
+    
     font-family: Gilroy-Bold;
     font-size: 15px;
-    line-height: 110%;
+    line-height: 100%;
     border: none;
     cursor: pointer;
 }
 
 .StartNow {
+    padding: 15px 30px;
     color: white;
     width: 140px;
     height: 50px;
@@ -113,14 +149,14 @@ a, button {
     height: 19px;
     top: 31px;
     gap: 0px;
-    opacity: 0px;
     background: white;
-
 
 }
 
 .footerLogos {
-    margin-top: 96px;
-    margin-bottom: 97px;
+    max-width: 1200px;
+    margin-top: 97px;
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
 }
-
